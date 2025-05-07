@@ -10,7 +10,7 @@
 
     <form>
         <label for="fn">Nome Completo: </label>
-        <input type="text" id="fn" > 
+        <input type="text" id="fn" placeholder="Letras maiúsculas"> 
 
         <br>
 
@@ -54,9 +54,36 @@
         <label for="frg">Faixa: </label>
         <input type="range" id="frg">
 
+        <br>
 
+        <span>Frutas favoritas:</span>
+        <input type="checkbox" id="ckbox1" value="0" disabled> 
+        <label for="ckbox1">Maça</label>
+        <input type="checkbox" id="ckbox2" value="1"> 
+        <label for="ckbox2">Morango</label>
+        <input type="checkbox" id="ckbox3" value="2" > 
+        <label for="ckbox3">Banana</label>
+        <input type="checkbox" id="ckbox4" value="3" checked> 
+        <label for="ckbox4">Laranja</label>
+
+        <br>
+        <label for="slc1">Escolha um curso: </label> 
+        <!-- <select id="slc1" multiple> -->
+        <select id="slc1">
+            <option value="0">Ciência da Computação</option>
+            <option value="1">Engenharia de Computação</option>
+            <option value="2">Desenvolvimento de Software</option>
+            <option value="3">Redes de Computadores</option>
+        </select>
+
+        <br>
+        <span>Comentários: </span>
+
+        <textarea rows="10" cols="100" id="txa1"></textarea>
 
         <br><br>
+
+        
 
         <button type="button">Enviar</button>
 

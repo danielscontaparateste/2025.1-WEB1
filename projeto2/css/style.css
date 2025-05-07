@@ -1,0 +1,64 @@
+body{
+    background-color:lightgray;
+    background-image: url("../imagens/image1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    
+}
+
+p {
+    /* color: rgb(5, 53, 5); */
+    background-color: #FFF;
+    
+    /* font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps; */
+
+    font: italic small-caps bold 200% 'Courier New', Courier, monospace;
+    
+    text-transform: none;
+    text-indent: 50px;
+    /* text-align: justify; */
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+h1,p{
+    color: blue;
+}
+
+h1{
+    /* color: blue; */
+    text-decoration: overline;
+    
+}
+
+span{
+    font-weight: bold;
+    color: orange;
+}
+
+header{
+    border: 1px solid black;
+    width: 50%;
+    height: 100px;
+}
+
+main{
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+}
+
+
+#p2{
+    text-decoration: overline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p5{
+    color: purple;
+}
