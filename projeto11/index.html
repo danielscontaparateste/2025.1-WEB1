@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 11</title>
+</head>
+<body>
+    <div id="container">
+        <div id="linha1">
+            <div class="cols" id="col1">
+                <div id="l1c1x"><label>x: </label><input type="number" id="iptx"></div> 
+                <div id="l1c1y"><label>y: </label><input type="number" id="ipty"></div>
+                <div id="l1c1bt"><button type="button" onclick="somar()">Somar</button></div>
+            </div>
+            <div class="cols" id="col2">
+                <label>pos_x: </label><input type="number" id="iptposx">
+                <label>pos_y: </label><input type="number" id="iptposy">
+                <button type="button" onclick="executar()">Executar</button>
+            </div>
+
+        </div>
+        <div id="linha2">
+            <div id="col3">
+                <div id="boxRes">
+                    <span id="spnRes">Resultado</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
