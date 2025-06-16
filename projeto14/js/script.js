@@ -1,4 +1,4 @@
-function imprimirMensagem(){
+function mostrarElementos(){
     const qtd = parseInt(document.getElementById("iptQtd").value);
 
     var container = document.createElement("div");
@@ -28,6 +28,10 @@ function imprimirMensagem(){
 
         box.textContent = k;
 
+        box.setAttribute("id","elem"+k);
+
+        console.log("id do elemento: ",box.getAttribute("id"));
+
         container.appendChild(box);
 
 
@@ -43,6 +47,21 @@ function imprimirMensagem(){
     
     document.querySelector("body").appendChild(container);
     
+
+}
+
+function apagarElemento(){
+
+    var infoElem = parseInt(document.getElementById("iptElemDel").value);
+
+    var idElem = "elem"+infoElem;
+
+    var elem = document.getElementById(idElem);
+
+    // alert(elem.style.backgroundColor);
+
+    elem.remove();
+
 
 }
 

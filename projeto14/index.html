@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laços</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <label>Quantidade: </label>
     <input type="number" id="iptQtd">
-    <button type="button" onclick="imprimirMensagem()">Executar</button>
+    <button type="button" onclick="mostrarElementos()">Executar</button>
     <button type="button" onclick="apagar()">Limpar</button>
+
+    <br>
+    <label id='lbElemDel'>Qual elemento deseja remover? </label>
+    <input type="number" id="iptElemDel">
+    <button type="button" onclick="apagarElemento()">Deletar</button>
+
     <script src="js/script.js"></script>
 </body>
 </html>
