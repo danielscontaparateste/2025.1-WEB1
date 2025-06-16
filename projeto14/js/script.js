@@ -1,3 +1,5 @@
+// Exercício : Organizar melhor o código.
+
 var segredo;
 var contadorErros = 0;
 
