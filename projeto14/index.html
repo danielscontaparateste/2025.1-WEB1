@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <label>Quantidade: </label>
-    <input type="number" id="iptQtd">
-    <button type="button" onclick="mostrarElementos()">Executar</button>
-    <button type="button" onclick="apagar()">Limpar</button>
+    <form id="formInfo">
+        <label>Quantidade: </label>
+        <input type="number" id="iptQtd">
+        <button type="button" onclick="mostrarElementos()">Executar</button>
+        <button type="button" onclick="apagar()">Limpar</button>
 
-    <br>
-    <label id='lbElemDel'>Qual elemento deseja remover? </label>
-    <input type="number" id="iptElemDel">
-    <button type="button" onclick="apagarElemento()">Deletar</button>
+        <br>
+        <label id='lbElemDel'>Qual elemento deseja remover? </label>
+        <input type="number" id="iptElemDel">
+        <button type="button" onclick="apagarElemento()">Deletar</button>
+    </form>    
 
     <script src="js/script.js"></script>
 </body>

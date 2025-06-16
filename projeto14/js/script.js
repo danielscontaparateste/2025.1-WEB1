@@ -1,10 +1,13 @@
+var segredo;
+var contadorErros = 0;
+
 function mostrarElementos(){
     const qtd = parseInt(document.getElementById("iptQtd").value);
 
     var container = document.createElement("div");
     container.setAttribute("id","container");
     container.style.width = "80%";
-    container.style.height = "500px";
+    container.style.height = "300px";
     container.style.display = "flex";
     container.style.flexWrap = "wrap";
     container.style.border = "2px solid black";
@@ -44,25 +47,63 @@ function mostrarElementos(){
         // document.querySelector("body").appendChild(p);
     
     } 
+
+    var divContador = document.createElement("div");
+    divContador.style.backgroundColor = "black";
+    divContador.style.width="250px";
+    divContador.style.height="50px";
+    divContador.style.color = "white";
+    divContador.style.position = "fixed";
+    divContador.style.bottom = "0px";
+    divContador.style.right = "0px";
+    
+    divContador.style.fontSize = "200%";
+    divContador.style.textAlign = "center";
+    
+    divContador.setAttribute("id","divContador");
+    divContador.textContent = "Erros: "+contadorErros;
+
+    container.appendChild(divContador);
     
     document.querySelector("body").appendChild(container);
     
+    segredo = sorteioBloco(qtd);
+    console.log('segredo : ',segredo);
 
 }
+
+function sorteioBloco(num){
+    var s = Math.floor(Math.random() * num);
+    return s;
+}
+
 
 function apagarElemento(){
 
     var infoElem = parseInt(document.getElementById("iptElemDel").value);
 
-    var idElem = "elem"+infoElem;
+    if (infoElem == segredo){
+        alert("Parabéns");
+        reiniciar();
+    }else{ 
+        var idElem = "elem"+infoElem;
+        var elem = document.getElementById(idElem);
+        // alert(elem.style.backgroundColor);
+        elem.remove();
+        contadorErros++;
 
-    var elem = document.getElementById(idElem);
+        var divContador = document.getElementById("divContador");
+        divContador.textContent = "Erros: "+contadorErros;
+        // console.log("contador" , contadorErros);    
+    }    
 
-    // alert(elem.style.backgroundColor);
+    
+}
 
-    elem.remove();
-
-
+function reiniciar(){
+    var form = document.getElementById("formInfo");
+    form.reset();
+    apagar();
 }
 
 
